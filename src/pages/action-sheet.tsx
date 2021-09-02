@@ -2,7 +2,7 @@ import React from "react";
 import type { NextPage } from "next";
 import { IonButton, useIonActionSheet } from "@ionic/react";
 
-const ActionSheet: NextPage = () => {
+const ActionSheetPage: NextPage = () => {
   const [present, dismiss] = useIonActionSheet();
 
   return (
@@ -39,4 +39,4 @@ const ActionSheet: NextPage = () => {
   );
 };
 
-export default ActionSheet;
+export default ActionSheetPage;

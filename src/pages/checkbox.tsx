@@ -14,7 +14,7 @@ const checkboxList = [
   { val: "Mushroom", isChecked: false },
 ];
 
-const Alert: NextPage = () => {
+const CheckboxPage: NextPage = () => {
   const [checked, setChecked] = useState(false);
 
   return (
@@ -53,4 +53,4 @@ const Alert: NextPage = () => {
   );
 };
 
-export default Alert;
+export default CheckboxPage;

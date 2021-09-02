@@ -16,6 +16,7 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
+
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
 
@@ -57,6 +58,9 @@ const MENU_LIST = [
   },
   {
     link: "toast",
+  },
+  {
+    link: "tabs",
   },
 ];
 

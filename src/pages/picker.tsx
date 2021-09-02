@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import type { NextPage } from "next";
 import { IonButton, useIonPicker } from "@ionic/react";
 
-const Home: NextPage = () => {
+const PickerPage: NextPage = () => {
   const [present] = useIonPicker();
   const [value, setValue] = useState("");
 
@@ -77,4 +77,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default PickerPage;

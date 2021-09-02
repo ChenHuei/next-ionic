@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import type { NextPage } from "next";
 import { IonButton, useIonModal } from "@ionic/react";
 
-const Home: NextPage = () => {
+const ModalPage: NextPage = () => {
   const [count, setCount] = useState(0);
   const [present, dismiss] = useIonModal(
     <div>
@@ -41,4 +41,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default ModalPage;

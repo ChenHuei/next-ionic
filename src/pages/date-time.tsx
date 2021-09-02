@@ -13,7 +13,7 @@ const customDayShortNames = [
   "fre",
   "l\u00f8r",
 ];
-const Home: NextPage = () => {
+const DateTimePage: NextPage = () => {
   const [selectedDate, setSelectedDate] = useState<string>(
     "2012-12-15T13:47:20.789"
   );
@@ -200,4 +200,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default DateTimePage;

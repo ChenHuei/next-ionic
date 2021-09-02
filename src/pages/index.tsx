@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import { IonButton } from "@ionic/react";
 import { menuController } from "@ionic/core";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   const openMenu = () => {
     menuController.open();
   };
@@ -15,4 +15,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePage;

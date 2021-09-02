@@ -2,7 +2,7 @@ import React from "react";
 import type { NextPage } from "next";
 import { IonButton, useIonToast } from "@ionic/react";
 
-const Home: NextPage = () => {
+const ToastPage: NextPage = () => {
   const [present, dismiss] = useIonToast();
 
   return (
@@ -33,4 +33,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default ToastPage;

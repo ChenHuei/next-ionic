@@ -10,7 +10,7 @@ export async function getStaticProps() {
   };
 }
 
-const Alert: NextPage = () => {
+const AlertPage: NextPage = () => {
   const [present] = useIonAlert();
 
   return (
@@ -42,4 +42,4 @@ const Alert: NextPage = () => {
   );
 };
 
-export default Alert;
+export default AlertPage;
