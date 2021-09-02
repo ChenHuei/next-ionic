@@ -1,9 +1,18 @@
-import type { NextPage } from 'next'
+import React from "react";
+import type { NextPage } from "next";
+import { IonButton } from "@ionic/react";
+import { menuController } from "@ionic/core";
 
 const Home: NextPage = () => {
-  return (
-    <div>home</div>
-  )
-}
+  const openMenu = () => {
+    menuController.open();
+  };
 
-export default Home
+  return (
+    <IonButton expand="block" onClick={() => openMenu()}>
+      Open Menu
+    </IonButton>
+  );
+};
+
+export default Home;
