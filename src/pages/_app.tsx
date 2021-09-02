@@ -1,5 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { AppProps } from "next/dist/shared/lib/router/router";
 import {
   IonApp,
@@ -32,7 +33,6 @@ import "@ionic/react/css/text-alignment.css";
 import "@ionic/react/css/text-transformation.css";
 import "@ionic/react/css/flex-utils.css";
 import "@ionic/react/css/display.css";
-import Link from "next/link";
 
 const MENU_LIST = [
   {
