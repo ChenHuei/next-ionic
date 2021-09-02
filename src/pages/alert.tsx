@@ -2,6 +2,14 @@ import React from "react";
 import type { NextPage } from "next";
 import { IonButton, useIonAlert } from "@ionic/react";
 
+export async function getStaticProps() {
+  return {
+    props: {
+      title: "Alert",
+    }, // will be passed to the page component as props
+  };
+}
+
 const Alert: NextPage = () => {
   const [present] = useIonAlert();
 

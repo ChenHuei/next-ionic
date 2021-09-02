@@ -6,7 +6,6 @@ import {
   IonApp,
   IonButtons,
   IonContent,
-  IonFooter,
   IonHeader,
   IonItem,
   IonLabel,
@@ -17,7 +16,6 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
 
@@ -58,14 +56,13 @@ const MENU_LIST = [
     link: "picker",
   },
   {
-    link: "tabs",
-  },
-  {
     link: "toast",
   },
 ];
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { title = "Next.js with Ionic", ...otherPageProps } = pageProps;
+
   return (
     <IonApp>
       <IonMenu side="start" content-id="main-content">
@@ -90,25 +87,19 @@ function MyApp({ Component, pageProps }: AppProps) {
           </IonList>
         </IonContent>
       </IonMenu>
-
       <div className="ion-page" id="main-content">
         <IonHeader translucent>
           <IonToolbar>
             <IonButtons slot="start">
               <IonMenuButton />
             </IonButtons>
-            <IonTitle>Next.js with Ionic</IonTitle>
+            <IonTitle>{title}</IonTitle>
           </IonToolbar>
         </IonHeader>
 
         <IonContent fullscreen>
-          <Component {...pageProps} />
+          <Component {...otherPageProps} />
         </IonContent>
-        <IonFooter>
-          <IonToolbar>
-            <IonTitle>Footer</IonTitle>
-          </IonToolbar>
-        </IonFooter>
       </div>
     </IonApp>
   );
